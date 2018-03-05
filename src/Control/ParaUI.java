@@ -46,6 +46,7 @@ public class ParaUI extends buscaminasUi {
 						desvelar.explotarMinas(tablero);
 						lblTexto.setText("Pisaste una mina, Ooooohh!!!");
 						lblTexto.setForeground(Color.RED);
+						//panelBotones.setEnabled(false);
 						panelBotones.removeAll();
 					}
 					/**

@@ -18,7 +18,7 @@ public class Abanderar {
 		int[] temp = new Utiles().obtenerCoordenada(boton);
 		Casilla casilla = tablero.getCasilla(temp);
 		if (casilla.isVelada()) {
-			casilla.setMarcada(true);
+			casilla.setMarcada(!casilla.isMarcada());
 			if (casilla.isMarcada()) {
 				colocarVistaBandera(boton);
 			}else {

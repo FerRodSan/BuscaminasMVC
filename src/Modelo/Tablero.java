@@ -121,7 +121,7 @@ public class Tablero {
 		}
 	}
 
-	public Casilla[][] getCasilla() {
+	public Casilla[][] getCasillas() {
 		return casilla;
 	}
 

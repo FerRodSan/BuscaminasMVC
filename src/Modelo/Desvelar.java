@@ -108,7 +108,7 @@ public class Desvelar {
 	 * @param tablero
 	 */
 	public void explotarMinas(Tablero tablero) {
-		Casilla[][] casillas = tablero.getCasilla();
+		Casilla[][] casillas = tablero.getCasillas();
 		for (Casilla[] casillas2 : casillas) {
 			for (Casilla casilla : casillas2) {
 				if (casilla.isMina()) {
