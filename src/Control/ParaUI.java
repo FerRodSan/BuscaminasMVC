@@ -38,6 +38,7 @@ public class ParaUI extends buscaminasUi {
 					if (SwingUtilities.isRightMouseButton(e)) {
 						System.out.println("derecha");
 						abanderar.colocarBandera((JButton) e.getSource(),tablero);
+						
 					}
 					/**
 					 * si se ha pisado una mina

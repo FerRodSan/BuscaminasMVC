@@ -21,6 +21,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JComboBox;
 
 public class buscaminasUi extends JFrame {
 
@@ -28,6 +29,9 @@ public class buscaminasUi extends JFrame {
 	protected JPanel panelBotones;
 	protected JButton boton;
 	protected JLabel lblTexto;
+	private JMenuItem mntmFacil;
+	private JMenuItem mntmMedia;
+	private JMenuItem mntmDificil;
 
 	/**
 	 * Create the frame.
@@ -46,9 +50,40 @@ public class buscaminasUi extends JFrame {
 		mntmReiniciar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				lblTexto.setText("Has reiniciado");
+
+			}
+		});
+		
+		JMenu mnNuevaPartida = new JMenu("Nueva Partida");
+		mnMenu.add(mnNuevaPartida);
+		
+		mntmFacil = new JMenuItem("Facil");
+		mntmFacil.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				lblTexto.setText("Has Elegido dificultad Facil");
+
+			}
+		});
+		mntmFacil.setHorizontalAlignment(SwingConstants.CENTER);
+		mnNuevaPartida.add(mntmFacil);
+		
+		mntmMedia = new JMenuItem("Media");
+		mntmMedia.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				lblTexto.setText("Has Elegido dificultad Media");
+
+			}
+		});
+		mnNuevaPartida.add(mntmMedia);
+		
+		mntmDificil = new JMenuItem("Dificil");
+		mntmDificil.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				lblTexto.setText("Has Elegido dificultad Dificil");
 				Principal.main(null);
 			}
 		});
+		mnNuevaPartida.add(mntmDificil);
 		mnMenu.add(mntmReiniciar);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
