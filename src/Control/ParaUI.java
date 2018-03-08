@@ -25,6 +25,9 @@ public class ParaUI extends buscaminasUi {
 		Component[] components = panelBotones.getComponents();
 		for (Component component : components) {
 			((JButton) component).addMouseListener(new MouseAdapter() {
+				
+				
+				
 				public void mouseClicked(MouseEvent e) {
 					/**
 					 * si se pusa el boton izquierdo del raton para desvelar casilla

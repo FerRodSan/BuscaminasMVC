@@ -92,7 +92,6 @@ public class buscaminasUi extends JFrame {
 
 		panelBotones = new JPanel();
 		contentPane.add(panelBotones, BorderLayout.CENTER);
-
 		panelBotones.setLayout(new GridLayout(10, 10, 0, 0));
 
 		JLabel lblNewLabel = new JLabel("BUSCAMINAS");
@@ -119,3 +118,4 @@ public class buscaminasUi extends JFrame {
 	}
 
 }
+
